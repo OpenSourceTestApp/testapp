@@ -1,0 +1,21 @@
+name: Lint
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  lint:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: install javascript dependencies
+      run: npm install
+    - name: npx expo lint
+      run: create lint options
+    - name: do linting
+      run: npx eslnt
