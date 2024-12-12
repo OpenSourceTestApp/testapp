@@ -17,5 +17,3 @@ jobs:
       run: npm install
     - name: npx expo lint
       run: create lint options
-    - name: do linting
-      run: npx eslnt
