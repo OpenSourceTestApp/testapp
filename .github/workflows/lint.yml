@@ -15,5 +15,5 @@ jobs:
     - uses: actions/checkout@v4
     - name: install javascript dependencies
       run: npm install
-    - name: npx expo lint
-      run: create lint options
+    - name: create lint options
+      run: npx expo lint
