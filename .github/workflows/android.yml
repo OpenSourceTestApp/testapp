@@ -23,5 +23,5 @@ jobs:
     - name: Build artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: code-coverage-report
-        path: android/app/build
+        name: APKs
+        path: android/app/build/outputs/apk
