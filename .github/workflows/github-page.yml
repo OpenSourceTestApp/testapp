@@ -25,6 +25,9 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
+      - name: Install all dependencies
+        run: npm install
+
       - name: Create typedoc html sites
         run: npx typedoc
 
